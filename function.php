@@ -15,7 +15,7 @@ function radio(string $name, string $value , array $data): string{
         $attributes .= 'checked';
     }
     return <<<HTML
-    <input type="radio" name="{$name}" value="$value" $attributes>
+    <input  type="radio" name="{$name}" value="$value" $attributes>
     HTML;
 }
 ?>
