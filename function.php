@@ -11,7 +11,7 @@ function checkbox(string $name, string $value , array $data): string{
 
 function radio(string $name, string $value , array $data): string{
     $attributes = '';
-    if(isset($data[$name]) && in_array($value, $data[$name])){
+    if(isset($data[$name]) && $data[$name] === $value){
         $attributes .= 'checked';
     }
     return <<<HTML
