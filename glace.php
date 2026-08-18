@@ -30,6 +30,7 @@ require 'function.php' ?>
         </div>
         <div class="card-body">
             <!-- parfum -->
+             <h2>Choississez un parfum </h2>
             <?php foreach($parfums as $parfum => $prix) :?>
                 <div class="checkbox">
                     <label>
@@ -39,6 +40,7 @@ require 'function.php' ?>
                 </div>
             <?php endforeach ?>
                 <!-- cornets -->
+                 <h2>Choississez un Cornet </h2>
             <?php foreach($cornets as $cornet => $prix) :?>
                 <div class="checkbox">
                     <label>
@@ -48,6 +50,7 @@ require 'function.php' ?>
                 </div>
             <?php endforeach ?>
                 <!-- supplement -->
+                 <h2>Choississez des supplements </h2>
             <?php foreach($supplements as $supplement => $prix) :?>
                 <div class="checkbox">
                     <label>
