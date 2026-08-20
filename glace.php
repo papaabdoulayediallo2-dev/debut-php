@@ -50,6 +50,18 @@
         }
     }
 
+    $commentaire = '';
+if (isset($_GET['commentaire'])) {
+    // On enlève les espaces avant/après
+    $texte = trim($_GET['commentaire']);
+    // Si après trim il reste quelque chose
+    if ($texte !== '') {
+        $commentaire = htmlspecialchars($texte);
+    }
+}
+
+
+
     require 'header.php';
     require 'function.php' ?>
 
@@ -94,6 +106,10 @@
                                      </label>
                                  </div>
                              <?php endforeach ?>
+                             <!-- Champ commentaire -->
+                            <h5 class="text-warning">Votre commentaire</h5>
+                            <input type="text" name="commentaire" class="form-control" placeholder="Entrez votre commentaire">
+
                              
                          </div>
                          <div class="card-footer">
@@ -138,6 +154,9 @@
              </div>
              <div class="card-footer">
                  <h3 class="text-dark">TOTAL: <span class="text-success"><?= $total ?> FCFA</span></h3>
+                 <?php if ($commentaire): ?>
+                    <p class="mt-2"><strong>Commentaire :</strong> <?= $commentaire ?></p>
+                <?php endif; ?>
              </div>
 
          </div>
