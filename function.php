@@ -18,6 +18,5 @@ function radio(string $name, string $value , array $data): string{
     HTML;
 }
 function creneaux_html(array $creneaux){
-    
 }
 ?>

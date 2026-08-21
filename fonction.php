@@ -3,7 +3,6 @@
 function bonjour($nom){
     echo "bonjour $nom";
 }
-
 function repondre_oui_non ($phrase) {
     while (true) {
              $reponse = readline($phrase ." - (o)ui/(n)on : ");
