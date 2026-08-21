@@ -7,8 +7,7 @@ function checkbox(string $name, string $value , array $data): string{
     return <<<HTML
     <input type="checkbox" name="{$name}[]" value="$value" $attributes>
     HTML;
-}
-
+} 
 function radio(string $name, string $value , array $data): string{
     $attributes = '';
     if(isset($data[$name]) && $data[$name] === $value){
@@ -17,5 +16,8 @@ function radio(string $name, string $value , array $data): string{
     return <<<HTML
     <input  type="radio" name="{$name}" value="$value" $attributes>
     HTML;
+}
+function creneaux_html(array $creneaux){
+    
 }
 ?>
