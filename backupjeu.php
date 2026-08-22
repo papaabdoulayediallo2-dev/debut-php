@@ -1,7 +1,7 @@
 <!-- Methode 1 -->
+<!-- Methode 1 -->
 <!-- <?php 
 $adeviner = 150;
-
 require 'header.php' ?>
 <form action="/jeu.php" method="GET">
  <div class="row">
